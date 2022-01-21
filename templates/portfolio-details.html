@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+    
+    <title>Photography</title>
+    <link rel="icon" href="{% static 'img/list-1.png' %}" type="image/x-icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Quantico:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{%static 'css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section header-normal">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="{% static 'img/logo.png' %}" alt="">
+                        </a>
+                    </div>
+                    <nav class="nav-menu mobile-menu">
+                        <ul>
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'services' %}">Services</a></li>
+                            <li><a href="{% url 'pricing' %}">Pricing</a></li>
+                            <li class="active"><a href="{% url 'portfolio' %}">Portfolio</a></li>
+                            <li><a href="{% url 'blog' %}">Blog</a></li>
+                            <li><a href="#">Pages</a>
+                                <ul class="dropdown">
+                                    <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                                    <li><a href="{% url 'portfolio-details' %}">Portfolio Details</a></li>
+                                    <li><a href="{% url 'blog-details' %}">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="top-search search-switch">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <div id="mobile-menu-wrap"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="bo-links">
+                        <a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a>
+                        <a href=".{% url 'portfolio' %}">Portfolio</a>
+                        <span>Color of natural</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Portfolio Hero Section Begin -->
+    <section class="portfolio-hero-section set-bg" data-setbg="{% static 'img/portfolio/details/details-hero1.jpeg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ph-text">
+                        <h2>Color of natural</h2>
+                        <ul>
+                            <li>Natural</li>
+                            <li>Aniaml</li>
+                            <li>Lifestyle</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Hero Section End -->
+
+    <!-- Portfolio Details Section Begin -->
+    <section class="portfolio-details-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="pd-text">
+                        <p>Commercial photography of people is anything intended to sell a product,
+                            especially advertisements and even stock photos.
+                            Commercial photographers often simply capture the products themselves,
+                            although that’s something I’ll cover later in this article;
+                            people are still used very frequently in advertising campaigns today.
+                            Usually, the goal of commercial photography is to create images that match the emotions and
+                            message the brand in question is trying to convey.
+                            These photographers need special skills in studio lighting and
+                            visualization to make the client’s plan a reality.</p>
+                        <p>Enim ipsam voluptatem quiatotam rem aperiam, eaque ipsa quae ab illo inventore aperiam, eaque
+                            ipsa quae ab illo inventore veritatis et quasi architecto. Nemo enim ipsam voluptatem quia
+                            voluptas sit aspernatur aut odit aut fugit.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="pd-text">
+                        <p>A cousin of portraiture, but distinct enough to count as its own genre,
+                            is fashion photography. This is a fast-paced world,
+                            and the best fashion photographers are intimately knowledgeable not just about lighting and
+                            photography but also the clothing styles they’re photographing.
+                            Fashion photographs are usually intended for brands and advertisements,
+                            but not always, especially in today’s Instagram world.</p>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Vivamus at nibh
+                            tincidunt, bibendum ligula id. Nemo enim ipsam voluptatem quiatotam rem aperiam, eaque ipsa
+                            quae ab illo inventore veritatis et quasi architecto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-pics">
+            <div class="portfolio-details-pic">
+                <div class="pdp-item set-bg" data-setbg="{% static 'img/portfolio/details/details-pic/dp-1.jpg' %}"></div>
+                <div class="pdp-item set-bg large-width large-height"
+                    data-setbg="{% static 'img/portfolio/details/details-pic/dp-2.jpeg' %}"></div>
+                <div class="pdp-item set-bg large-width" data-setbg="{% static 'img/portfolio/details/details-pic/dp-3.jpg' %}"></div>
+                <div class="pdp-item set-bg" data-setbg="{% static 'img/portfolio/details/details-pic/dp-4.jpg' %}"></div>
+                <div class="pdp-item set-bg" data-setbg="{% static 'img/portfolio/details/details-pic/dp-5.jpg' %}"></div>
+                <div class="pdp-item set-bg" data-setbg="{% static 'img/portfolio/details/details-pic/dp-6.jpg' %}"></div>
+            </div>
+        </div>
+        <div class="pd-more-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2>Event Photography </h2>
+                    </div>
+                    <div class="col-lg-8">
+                        <p>Aside from weddings, there are broader classes of events that deserve recognition as a separate genre of photography.
+                            For example, corporate events, concerts, parades, and other celebrations all count as event photography.
+                            You can expect unpredictability and fast-paced scenes – but
+                            also interesting human interactions and sometimes (like with concert photos) very good light.
+                            Skilled event photographers are able to convey emotions so that viewers are able to relive the moment.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2>Street Photography</h2>
+                    </div>
+                    <div class="col-lg-8">
+                        <p>Street photography is about capturing slices of life that happen in common areas in a city, such as parks and sidewalks.
+                            Good street photos find meaning and purpose in seemingly ordinary moments or interactions,
+                            making viewers think about something they would otherwise pass by.
+                            Street photography is often associated with black and white work on 35mm film,
+                            but modern-day street photos utilize almost any post-processing styles and camera equipment.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2>Nature Photography</h2>
+                    </div>
+                    <div class="col-lg-8">
+                        <p> photography is another way of saying scenic or environmental photography.
+                            It involves taking pictures of a natural scene – often large and grand,
+                            but sometimes smaller and more intimate – in a way that brings the viewer into a scene.
+                            Landscape photography is one of the most popular types today,
+                            spinning off several sub-genres such as storm photography, seascapes, and so on. With a broader definition,
+                            it also includes “urban landscape” photography and manmade scenes.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Details Section End -->
+
+    <!-- Recent Photography Section Begin -->
+    <section class="recent-photography-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <h2>Recent photography</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="rp-item">
+                        <img src="{% static 'img/recent-photography/rp-1.jpg' %}" alt="">
+                        <div class="rp-text">
+                            <h5>SPRING GARDEN</h5>
+                            <span>Lifestyle</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="rp-item">
+                        <img src="{% static 'img/recent-photography/rp-2.jpg' %}" alt="">
+                        <div class="rp-text">
+                            <h5>SPRING GARDEN</h5>
+                            <span>Fashion</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="rp-item">
+                        <img src="{% static 'img/recent-photography/rp-3.jpg' %}" alt="">
+                        <div class="rp-text">
+                            <h5>SPRING GARDEN</h5>
+                            <span>Natural</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="rp-item">
+                        <img src="{% static 'img/recent-photography/rp-4.jpg' %}" alt="">
+                        <div class="rp-text">
+                            <h5>SPRING GARDEN</h5>
+                            <span>Animal</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="rp-item">
+                        <img src="{% static 'img/recent-photography/rp-5.jpeg' %}" alt="">
+                        <div class="rp-text">
+                            <h5>SPRING GARDEN</h5>
+                            <span>Wedding</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="rp-item">
+                        <img src="{% static 'img/recent-photography/rp-6.jpeg' %}" alt="">
+                        <div class="rp-text">
+                            <h5>SPRING GARDEN</h5>
+                            <span>Wedding</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="load-more-btn portfolio-btn">
+                <a href="#">View all photography</a>
+            </div>
+        </div>
+    </section>
+    <!-- Recent Photography Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="fs-about">
+                        <div class="fa-logo">
+                            <a href="#">
+                                <img src="{% static 'img/f-logo.png' %}" alt="">
+                            </a>
+                        </div>
+                        <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.</p>
+                        <div class="fa-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="fs-widget">
+                        <h5>Instagram</h5>
+                        <div class="fw-instagram">
+                            <img src="{% static 'img/instagram/insta-1.jpg' %}" alt="">
+                            <img src="{% static 'img/instagram/insta-2.jpg' %}" alt="">
+                            <img src="{% static 'img/instagram/insta-3.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="fs-widget">
+                        <h5>Quick links</h5>
+                        <ul>
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                            <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+                            <li><a href="{% url 'services' %}">Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="fs-widget">
+                        <h5>Subscribe</h5>
+                        <p>Imolor amet consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="fw-subscribe">
+                            <form action="#">
+                                <input type="text" placeholder="Email">
+                                <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="copyright-text">
+                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://Rajeev.com" target="_blank">Rajeev Rock Films & Production</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search model Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search model end -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
