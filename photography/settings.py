@@ -26,7 +26,7 @@ SECRET_KEY = '*4l)^91uti8i6ew9as14603xtscv&87m@#lcjtr#v$_it2023n'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-Templates = os.path.join('Templates')
+Templates = os.path.join(BASE_DIR, 'Templates')
 
 # Application definition
 
